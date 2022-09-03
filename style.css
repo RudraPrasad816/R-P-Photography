@@ -1,0 +1,272 @@
+*{
+    padding:0;
+    margin: 0;
+}
+body{
+    background-color: rgba(111, 78, 55, 0.5);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+.container{
+    width: 50%;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6));
+}
+
+.card-1{
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    background-image: linear-gradient(to bottom,white, rgba(111, 78, 55, 0.2), rgba(111, 78, 55, 0.4));
+}
+.incard-left{
+    width: 40%;
+    text-align: center;
+}
+.incard-left h1{
+    font-size:x-large;
+}
+.incard-left p{
+    font-size: small;
+}
+.incard-left a{
+    color: black;
+    padding: 15px;
+    text-decoration: none;
+    font-size: small;
+    font-weight: bold;
+    border-radius: 10pc;
+    background: rgba(111, 78, 55, 0.4);
+}
+.incard-left a:hover{
+    background: rgba(111, 78, 55, 0.1);
+    font-weight: bold;
+    border: 1px solid rgba(111, 78, 55, 0.4);
+}
+.incard-right{
+    height: 100%;
+    width: 60%;
+}
+.incard-right img{
+    height: 100%;
+    width: 100%;
+    margin-right: 0;
+}
+.work{
+    height: 10vh;
+    width: 100%;
+    background-color: #6F4E37;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.work h1{
+    font-size: x-large;
+    color: white;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    padding: 15px;
+}
+
+.card-2{
+    width: 100%;
+    margin-top: 3px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+.card-2 img{
+    height: 70vh;
+    width: 100%;
+}
+.card-2 h3{
+    font-size: large;
+    margin-top: 10px;
+}
+.card-2 p{
+    font-size: small;
+    padding: 10px;
+    padding-top: 0;
+}
+footer{
+    width: 100%;
+    height: 30vh;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(111, 78, 55, 0.2), rgba(0, 0, 0, 0.1));
+}
+.about-me{
+    width: 40%;
+    height: 100%;
+    background-color: transparent;
+    padding: 10px;
+    font-weight: bold;
+    align-items: center;
+}
+.about-me p{
+    font-size: small;
+}
+.contact{
+    width: 20%;
+    height: 100%;
+    background-color: transparent;
+    display: block;
+    text-align: center;
+    align-items: center;
+}
+.contact h5{
+    margin-top: 30%;
+}
+.contact a{
+    color: black;
+    margin-top: 10px;
+}
+.contact a i{
+    font-size: 25px;
+}
+.image{
+    width: 20%;
+    height: 100%;
+}
+.image img{
+    width: 100%;
+    height: 100%;
+}
+footer{
+    margin: 0;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer .aboutme{
+    width: 90%;
+    padding-top: 25px;
+    text-align: center;
+}
+footer .contactdet{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .contactdet a{
+    padding: 20px;
+}
+footer .contactdet a i{
+    color:blueviolet;
+}
+
+
+@media only screen and (max-width: 499px) {
+    .container{
+        width: 100%;
+    }
+    .card-1{
+        display: block;
+        box-shadow: none;
+    }
+    .incard-left{
+        height: 30vh;
+        width: 100%;
+    }
+    .incard-left h1{
+        padding-top: 5%;
+    }
+    .incard-left p{
+        padding-top: 2%;
+    }
+    .incard-right{
+        width: 100%;
+        height: 70vh;
+    }
+    .work{
+        margin-top: 5px;
+        height: auto;
+    }
+    .card-2{
+        box-shadow: none;
+    }
+    .card-2 img{
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+@media only screen and (min-width: 500px) and (max-width: 768px) {
+    .container{
+        width: 100%;
+    }
+    .card-1{
+        display: block;
+        box-shadow: none;
+    }
+    .incard-left{
+        height: 30vh;
+        width: 100%;
+    }
+    .incard-left h1{
+        padding-top: 5%;
+    }
+    .incard-right{
+        width: 100%;
+        height: 70vh;
+    }
+    .work{
+        margin-top: 5px;
+        height: auto;
+    }
+    .card-2{
+        box-shadow: none;
+    }
+    .card-2 img{
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 768px) {
+    .container{
+        width: 70%;
+    }
+    .card-1{
+        display: block;
+        box-shadow: none;
+    }
+    .incard-left{
+        height: 30vh;
+        width: 100%;
+    }
+    .incard-left h1{
+        padding-top: 5%;
+    }
+    .incard-right{
+        width: 100%;
+        height: 70vh;
+    }
+    .work{
+        margin-top: 5px;
+        height: auto;
+    }
+    .card-2{
+        box-shadow: none;
+    }
+    .card-2 img{
+        width: 100%;
+        height: auto;
+    }
+
+}
